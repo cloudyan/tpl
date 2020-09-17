@@ -10,7 +10,7 @@
 ## 使用
 
 ```bash
-# 使用 github 项目模板
+# 使用 github 项目模板，可使用分支(#dev)
 vue create -p cloudyan/tpl <custom name>
 vue create -p cloudyan/tpl#dev <custom name>
 
@@ -19,6 +19,8 @@ vue create -p ./tpl test2
 ```
 
 ## 远程 Preset
+
+[插件开发指南](https://cli.vuejs.org/zh/dev-guide/plugin-dev.html)
 
 你可以通过发布 git repo 将一个 preset 分享给其他开发者。这个 repo 应该包含以下文件：
 
