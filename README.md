@@ -10,8 +10,12 @@
 ## 使用
 
 ```bash
-vue create -p ./tpl test2
+# 使用 github 项目模板
 vue create -p cloudyan/tpl <custom name>
+vue create -p cloudyan/tpl#dev <custom name>
+
+# 也可以本地模板
+vue create -p ./tpl test2
 ```
 
 ## 远程 Preset
