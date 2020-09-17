@@ -12,11 +12,11 @@ module.exports = {
           return path.resolve(process.env.UNI_INPUT_DIR, id.substr(1))
         }
         return id
-      }
+      },
     }),
     require('autoprefixer')({
-      remove: process.env.UNI_PLATFORM !== 'h5'
+      remove: process.env.UNI_PLATFORM !== 'h5',
     }),
-    require('@dcloudio/vue-cli-plugin-uni/packages/postcss')
-  ]
+    require('@dcloudio/vue-cli-plugin-uni/packages/postcss'),
+  ],
 }

@@ -18,7 +18,7 @@ if (
 
   const isWin = /^win/.test(process.platform)
 
-  const normalizePath = path => (isWin ? path.replace(/\\/g, '/') : path)
+  const normalizePath = path2 => (isWin ? path2.replace(/\\/g, '/') : path2)
 
   const input = normalizePath(process.env.UNI_INPUT_DIR)
   try {
@@ -31,13 +31,13 @@ if (
             return path.relative(input, file)
           }
           return false
-        }
-      }
+        },
+      },
     ])
   } catch (e) {}
 }
 
-process.UNI_LIBRARIES = process.UNI_LIBRARIES || ['@dcloudio/uni-ui']
+process.UNI_LIBRARIES = process.UNI_LIBRARIES || ['@deepjs/uni-ccui']
 process.UNI_LIBRARIES.forEach(libraryName => {
   plugins.push([
     'import',
@@ -45,8 +45,8 @@ process.UNI_LIBRARIES.forEach(libraryName => {
       'libraryName': libraryName,
       'customName': (name) => {
         return `${libraryName}/lib/${name}/${name}`
-      }
-    }
+      },
+    },
   ])
 })
 module.exports = {
@@ -55,9 +55,9 @@ module.exports = {
       '@vue/app',
       {
         modules: 'commonjs',
-        useBuiltIns: process.env.UNI_PLATFORM === 'h5' ? 'usage' : 'entry'
-      }
-    ]
+        useBuiltIns: process.env.UNI_PLATFORM === 'h5' ? 'usage' : 'entry',
+      },
+    ],
   ],
-  plugins
+  plugins,
 }

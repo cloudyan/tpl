@@ -55,11 +55,16 @@ module.exports = (api, options, rootOptions) => {
     //     }
     //   }
     // })
+    if (['tpl-uni-pro'].includes(options.template)) {
+
+    }
   } else if (options.template.startsWith('tpl-vue')) {
 
-    if (['tpl-vue-h5'].includes(options.template)) {
+    if (['tpl-vue'].includes(options.template)) {
 
-    } else if (['tpl-vue-admin'].includes(options.template)) {
+    } else if (['tpl-vue-h5-pro'].includes(options.template)) {
+
+    } else if (['tpl-vue-admin-pro'].includes(options.template)) {
 
     }
   }
