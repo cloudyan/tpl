@@ -4,21 +4,21 @@ module.exports = [
     name: 'template',
     message: '请选择模板',
     choices: [
+      // {
+      //   name: 'tpl-default: 默认模板 vue 精简项目',
+      //   value: 'tpl-default'
+      // },
       {
-        name: '默认模板',
-        value: 'default'
+        name: 'tpl-uni: uni-app 跨平台小程序',
+        value: 'tpl-uni'
       },
       {
-        name: 'tpl-uni',
-        value: 'default'
+        name: 'tpl-uni: vue H5 单页面应用项目',
+        value: 'tpl-vue-h5'
       },
       {
-        name: 'tpl-vue-h5',
-        value: 'default'
-      },
-      {
-        name: 'tpl-vue-admin',
-        value: 'default'
+        name: 'tpl-vue-admin: vue admin PC管理后台项目',
+        value: 'tpl-vue-admin'
       },
       // {
       //   name: 'Hello uni-app',
