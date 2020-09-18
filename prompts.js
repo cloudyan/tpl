@@ -9,20 +9,20 @@ module.exports = [
       //   value: 'tpl-default'
       // },
       {
-        name: 'uni-app 定制模板',
+        name: 'uni-app 定制版',
         value: 'tpl-uni-pro',
       },
       {
-        name: 'uni-app 精简模板',
+        name: 'uni-app 精简版',
         value: 'tpl-uni',
       },
       {
         name: 'vue-h5 单页面应用模板',
-        value: 'tpl-vue-h5',
+        value: 'tpl-vue-h5', // 精简版
       },
       {
         name: 'vue-admin PC管理后台模板',
-        value: 'tpl-vue-admin',
+        value: 'tpl-vue-admin', // 精简版
       },
       // {
       //   name: 'vue-h5 定制模板',

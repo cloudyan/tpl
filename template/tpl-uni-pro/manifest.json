@@ -54,22 +54,34 @@
 
 	},
 	"mp-weixin": { /* 微信小程序特有相关 */
-		"appid": "",
-		"setting": {
-			"urlCheck": false
-		},
-		"usingComponents": true
+		"appid" : "",
+    "setting" : {
+      "urlCheck" : false
+    },
+    "usingComponents" : true,
+    "permission" : {
+      "scope.userLocation" : {
+        "desc" : "获取当前城市定位信息"
+      }
+    },
+    "uniStatistics" : {
+      "enable" : true
+    }
 	},
 	"mp-alipay" : {
-        "usingComponents" : true
-    },
-    "mp-baidu" : {
-        "usingComponents" : true
-    },
-    "mp-toutiao" : {
-        "usingComponents" : true
-    },
-    "mp-qq" : {
-        "usingComponents" : true
+    "usingComponents" : true,
+    "component2" : true,
+    "uniStatistics" : {
+      "enable" : true
     }
+  },
+  "mp-baidu" : {
+    "usingComponents" : true
+  },
+  "mp-toutiao" : {
+    "usingComponents" : true
+  },
+  "mp-qq" : {
+    "usingComponents" : true
+  }
 }
