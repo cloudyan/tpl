@@ -75,7 +75,7 @@ module.exports = (api, options, rootOptions) => {
       merge(obj, config['vue-admin-pro'])
     }
   }
-  console.log(obj)
+  // console.log(obj)
   api.extendPackage(pkg => {
     return obj
   })
@@ -93,7 +93,7 @@ module.exports = (api, options, rootOptions) => {
     // await generate(path.resolve(__dirname, './template/common'), files)
     if (template.startsWith('tpl-uni')) {
       await generate(path.resolve(__dirname, './template/common-uni'), files)
-      await generate(path.resolve(__dirname, './template/tpl-uni'), files, base, rootOptions)
+      await generate(path.resolve(__dirname, `./template/${template}`), files, base, rootOptions)
     } else if (template.startsWith('tpl-vue')) {
       await generate(path.resolve(__dirname, './template/common-vue'), files)
       await generate(path.resolve(__dirname, `./template/${template}`), files, base, rootOptions)

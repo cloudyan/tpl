@@ -9,24 +9,32 @@ module.exports = [
       //   value: 'tpl-default'
       // },
       {
-        name: 'uni-app 入门模板',
-        value: 'tpl-uni'
+        name: 'uni-app 定制模板',
+        value: 'tpl-uni-pro',
       },
       {
-        name: 'uni-pro: 定制uni-app模板(@deepjs)',
-        value: 'tpl-uni-pro'
+        name: 'uni-app 精简模板',
+        value: 'tpl-uni',
       },
       {
-        name: 'vue h5 单页面应用项目',
-        value: 'tpl-vue-h5-pro'
+        name: 'vue-h5 单页面应用模板',
+        value: 'tpl-vue-h5',
       },
       {
-        name: 'vue admin PC管理后台项目',
-        value: 'tpl-vue-admin-pro'
+        name: 'vue-admin PC管理后台模板',
+        value: 'tpl-vue-admin',
       },
+      // {
+      //   name: 'vue-h5 定制模板',
+      //   value: 'tpl-vue-h5',
+      // },
+      // {
+      //   name: 'vue-admin 定制模板',
+      //   value: 'tpl-vue-admin',
+      // },
       {
         name: '自定义模板',
-        value: 'custom'
+        value: 'custom',
       }
     ],
     default: 'None'

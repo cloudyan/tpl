@@ -1,3 +1,5 @@
+// 各种模板的依赖配置等
+
 module.exports = {
   default: {
 
