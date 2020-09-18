@@ -97,9 +97,9 @@ const types = {
   miniapp: /^miniapp:\/\//i, // 外部小程序跳转
   // mini: /^pages\//i, // 支持小程序
   mini: /^([A-Za-z0-9])+([-|_]([a-z0-9]+)){0,3}$/i, // 小程序 pageName
-  h5my: /(\.dev|\.beta)?\.mishifeng\.com/i,
+  h5my: /(\.dev|\.beta)?\.xxx\.com/i,
   h5my2: env.baseUrl,
-  h5auth: /(topic(\.dev|\.beta)?\.doweidu\.com)/i,
+  h5auth: /(topic(\.dev|\.beta)?\.xxx2\.com)/i,
   h5: /^(https|http):\/\//i,
   tel: /^tel:/i, // 手机号，h5用a标签写，不走事件，小程序走事件
   script: /^javascript\:([\w|\d]*)\(\'(.*?)\'\)/, // 自定义脚本 领优惠券
