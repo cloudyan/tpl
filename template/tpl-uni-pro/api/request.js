@@ -1,8 +1,10 @@
 import env from '@/config/env'
-import mini from '@/utils/mini'
 import store from '@/store'
 import LRU from 'lru-cache'
 import { promisify } from '@/utils/index'
+
+// TODO: 取消掉对 mini 的依赖
+import mini from '@/utils/mini'
 
 // 缓存在内存中
 // TODO: 目前缓存在 ajax 未返回之前，发出 N 次，则都会执行（缓存还未建立），应该使用节流控制，保留第一次 or 最后一次
@@ -109,11 +111,11 @@ export default function request(url, options = {}, success = noop, fail = noop) 
       // store.dispatch('user/popupLogin', true);
 
       mini.showLoading()
-      store.dispatch('user/getAuth').then(
-        res => {
-          mini.hideLoading()
-        }
-      )
+      // store.dispatch('user/getAuth').then(
+      //   res => {
+      //     mini.hideLoading()
+      //   }
+      // )
       // if (mini.getPageName() == 'webview') {
       //   mini.forward('login');
       // } else {
