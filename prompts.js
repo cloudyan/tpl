@@ -9,33 +9,21 @@ module.exports = [
       //   value: 'tpl-default'
       // },
       {
-        name: 'tpl-uni: uni-app 跨平台小程序',
+        name: 'uni-app 入门模板',
         value: 'tpl-uni'
       },
       {
-        name: 'tpl-uni: vue H5 单页面应用项目',
-        value: 'tpl-vue-h5'
+        name: 'uni-pro: 定制uni-app模板(@deepjs)',
+        value: 'tpl-uni-pro'
       },
       {
-        name: 'tpl-vue-admin: vue admin PC管理后台项目',
-        value: 'tpl-vue-admin'
+        name: 'vue h5 单页面应用项目',
+        value: 'tpl-vue-h5-pro'
       },
-      // {
-      //   name: 'Hello uni-app',
-      //   value: 'cloudyan/tpl-hello'
-      // },
-      // {
-      //   name: 'uni-app 模板',
-      //   value: 'cloudyan/tpl-uni'
-      // },
-      // {
-      //   name: 'Vue H5 模板',
-      //   value: 'cloudyan/tpl-vue-h5'
-      // },
-      // {
-      //   name: 'Vue admin 模板',
-      //   value: 'cloudyan/tpl-vue-admin'
-      // },
+      {
+        name: 'vue admin PC管理后台项目',
+        value: 'tpl-vue-admin-pro'
+      },
       {
         name: '自定义模板',
         value: 'custom'

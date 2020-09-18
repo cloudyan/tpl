@@ -1,5 +1,10 @@
 
+
+// 需要安装依赖：
 // npm i eslint babel-eslint eslint-plugin-import eslint-plugin-vue @vue/cli-plugin-eslint --save-dev
+
+// 还可以安装依赖 eslint-plugin-html eslint-plugin-node eslint-plugin-promise
+
 module.exports = {
   root: true,
   parser: 'vue-eslint-parser',
