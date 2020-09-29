@@ -31,8 +31,15 @@ async function generate (dir, files, base = '', rootOptions = {}) {
   })
 }
 
+function merge(api, ...rest) {
+  for (let i= 0; i < rest.length; i++) {
+    api.extendPackage(pkg => {
+      return rest[i]
+    })
+  }
+}
+
 module.exports = (api, options, rootOptions) => {
-  const merge = require('lodash.merge')
 
   // 添加公共依赖
   // api.extendPackage(pkg => {
@@ -49,21 +56,20 @@ module.exports = (api, options, rootOptions) => {
   // eslint 还可以选择 eslint-plugin-html eslint-plugin-node eslint-plugin-promise
 
   // 条件依赖
-  const obj = {}
   if (options.template.startsWith('tpl-uni')) {
     merge(
-      obj,
+      api,
       config['eslint'],
       config['sass'],
       config['uni-test'],
       config['uni'],
     )
     if (['tpl-uni-pro'].includes(options.template)) {
-      merge(obj, config['uni-pro'])
+      merge(api, config['uni-pro'])
     }
   } else if (options.template.startsWith('tpl-vue')) {
     merge(
-      obj,
+      api,
       config['eslint'],
       config['test'],
       config['vue'],
@@ -71,15 +77,15 @@ module.exports = (api, options, rootOptions) => {
     if (['tpl-vue'].includes(options.template)) {
 
     } else if (['tpl-vue-h5-pro'].includes(options.template)) {
-      merge(obj, config['vue-h5-pro'])
+      merge(api, config['vue-h5-pro'])
     } else if (['tpl-vue-admin-pro'].includes(options.template)) {
-      merge(obj, config['vue-admin-pro'])
+      merge(api, config['vue-admin-pro'])
     }
   }
   // console.log(obj)
-  api.extendPackage(pkg => {
-    return obj
-  })
+  // api.extendPackage(pkg => {
+  //   return obj
+  // })
 
   // api.render('./template/default', 'src')
 
