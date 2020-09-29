@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const config = require('./config')
-const merge = require('lodash.merge')
 
 async function generate (dir, files, base = '', rootOptions = {}) {
+  const merge = require('lodash.merge')
   const glob = require('glob')
   const isBinaryFileSync = require('isbinaryfile').isBinaryFileSync
 
