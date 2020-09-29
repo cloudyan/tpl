@@ -4,6 +4,7 @@
   "description": "uni-app preset for vue-cli",
   "main": "index.js",
   "scripts": {
+    "init": "npm install",
     "test": "echo 'vue create -p ./tpl test2'"
   },
   "author": "cloudyan",

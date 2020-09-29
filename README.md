@@ -9,6 +9,8 @@
 
 ## 使用
 
+需要模板内执行 npm i ？
+
 ```bash
 # 使用 github 项目模板，可使用分支(#dev)
 vue create -p cloudyan/tpl <custom name>
