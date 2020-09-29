@@ -3,7 +3,6 @@ const path = require('path')
 const config = require('./config')
 
 async function generate (dir, files, base = '', rootOptions = {}) {
-  const merge = require('lodash.merge')
   const glob = require('glob')
   const isBinaryFileSync = require('isbinaryfile').isBinaryFileSync
 
@@ -33,6 +32,8 @@ async function generate (dir, files, base = '', rootOptions = {}) {
 }
 
 module.exports = (api, options, rootOptions) => {
+  const merge = require('lodash.merge')
+
   // 添加公共依赖
   // api.extendPackage(pkg => {
   //   return {
